@@ -210,8 +210,8 @@ export default function App() {
       setNewTitle("");
       setNewMediaUrl("");
       setNewDescription("");
-      setSuccessMsg(`"${newItem.title}" has been successfully published to Firebase Firestore database!`);
-      setTimeout(() => setSuccessMsg(""), 5000);
+      setSuccessMsg("Uploaded successfully!");
+      setTimeout(() => setSuccessMsg(""), 3000);
     } catch (err) {
       console.error("Firestore write failure:", err);
       setFormError("Error writing to Firestore. Ensure security rules are applied for public database updates.");
@@ -251,7 +251,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
           {/* Logo signature layout */}
-          <div className="flex items-center gap-2.5">
+          <a href="/" className="flex items-center gap-2.5 cursor-pointer hover:opacity-80 transition-opacity">
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#040404] border border-zinc-850 flex items-center justify-center overflow-hidden p-1 shadow-sm">
               <img src="/logo.png" alt="BWSA Logo" className="w-full h-full object-contain" />
             </div>
@@ -263,7 +263,7 @@ export default function App() {
                 Africa (BWSA)
               </span>
             </div>
-          </div>
+          </a>
 
           {/* Nav / Anchor settings */}
           <div className="flex items-center gap-3">
@@ -443,17 +443,13 @@ export default function App() {
                   {/* Media Link */}
                   <div className="md:col-span-3 space-y-1.5">
                     <label className="block text-[9px] uppercase tracking-wider font-mono text-zinc-500 font-semibold">
-                      {newType === "video" ? "YouTube URL Link" : "Image Link (Direct / URL link)"}
+                      Media Link
                     </label>
                     <input
                       type="text"
                       value={newMediaUrl}
                       onChange={(e) => setNewMediaUrl(e.target.value)}
-                      placeholder={
-                        newType === "video" 
-                        ? "https://www.youtube.com/watch?v=..." 
-                        : "e.g. https://images.unsplash.com/..."
-                      }
+                      placeholder="Enter the media URL..."
                       className="w-full bg-[#050505] border border-zinc-900 rounded p-2.5 text-xs focus:outline-none focus:border-[#C5A059] text-zinc-100 font-mono text-[11px]"
                     />
                   </div>
@@ -476,13 +472,6 @@ export default function App() {
                 {/* Action trigger */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2">
                   <div className="text-[10px] text-zinc-500 italic max-w-lg font-light leading-normal">
-                    {newType === "video" ? (
-                      <span className="text-[#C5A059]/80 font-mono">
-                        💡 System parses YouTube IDs automatically and fetches premium covers instantly.
-                      </span>
-                    ) : (
-                      <span>For photography and design flyers, make sure the image URL is direct and shared publicly.</span>
-                    )}
                   </div>
 
                   <button
@@ -498,28 +487,28 @@ export default function App() {
           )}
         </AnimatePresence>
 
-        {/* FEEDBACK BANNER ALERTS */}
+        {/* FLOATING NOTIFICATION TOASTS */}
         <AnimatePresence>
           {successMsg && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="bg-green-950/20 border border-green-900/40 text-green-300 p-4 rounded-xl flex items-center gap-2.5 text-xs max-w-4xl mx-auto"
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="fixed bottom-6 right-6 z-50 bg-zinc-950 border border-green-900/50 shadow-2xl text-green-300 px-4 py-3 rounded-lg flex items-center gap-3 text-xs max-w-sm"
             >
               <Check className="w-4 h-4 text-green-400 shrink-0" />
-              <span>{successMsg}</span>
+              <span className="font-medium tracking-wide">{successMsg}</span>
             </motion.div>
           )}
           {formError && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="bg-red-950/20 border border-red-900/40 text-red-350 p-4 rounded-xl flex items-center gap-2.5 text-xs max-w-4xl mx-auto"
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="fixed bottom-6 right-6 z-50 bg-zinc-950 border border-red-900/50 shadow-2xl text-red-400 px-4 py-3 rounded-lg flex items-center gap-3 text-xs max-w-sm"
             >
-              <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
-              <span>{formError}</span>
+              <AlertCircle className="w-4 h-4 text-red-500 shrink-0" />
+              <span className="font-medium tracking-wide">{formError}</span>
             </motion.div>
           )}
         </AnimatePresence>
