@@ -611,8 +611,10 @@ export default function App() {
                       <img
                         src={bgThumbnail}
                         alt={item.title}
+                        loading="lazy"
+                        decoding="async"
                         referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out select-none"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out select-none bg-zinc-900"
                       />
                     </div>
 
