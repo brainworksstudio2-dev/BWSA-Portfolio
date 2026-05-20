@@ -334,8 +334,8 @@ export default function App() {
           
           {/* Logo signature layout */}
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-850 flex items-center justify-center text-[#C5A059]">
-              <Sparkles className="w-5 h-5 animate-pulse" />
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#040404] border border-zinc-850 flex items-center justify-center overflow-hidden p-1 shadow-sm">
+              <img src="/logo.png" alt="BWSA Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <span className="block text-[10px] sm:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.2em] font-display text-zinc-100 uppercase leading-tight">
