@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "The Golden Silhouette",
+    "category": "Photography",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80",
+    "description": "High-fashion editorial photoshoot capturing warm natural sunset rays and bold minimalist silhouettes."
+  },
+  {
+    "id": "2",
+    "title": "Chrono Luxury Brand Identity",
+    "category": "Branding",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+    "description": "A refined brand direction for ultra-luxury watches, emphasizing raw Swiss engineering and editorial packaging."
+  },
+  {
+    "id": "3",
+    "title": "Urban Neo-Noir Nocturne",
+    "category": "Videography",
+    "type": "video",
+    "mediaUrl": "https://assets.mixkit.co/videos/preview/mixkit-rainy-night-in-a-neon-city-43152-large.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=600&q=80",
+    "description": "Cinematic 4K short film capturing neon reflections, wet asphalt, and midnight atmosphere in East Tokyo."
+  },
+  {
+    "id": "4",
+    "title": "Apex Monolith Architecture",
+    "category": "Corporate Photography",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+    "description": "Modern Brutalist corporate headquarters capturing dynamic shadows and reflective steel geometry."
+  },
+  {
+    "id": "5",
+    "title": "Elysian Runway editorial",
+    "category": "Photography",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80",
+    "description": "High-contrast haute couture photography showcasing avant-garde apparel design and stark studio lighting."
+  },
+  {
+    "id": "6",
+    "title": "Lumina Cosmetic Campaign",
+    "category": "Graphic Design",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80",
+    "description": "Typography-first layout designs and poster series for a sustainable premium skincare house."
+  },
+  {
+    "id": "7",
+    "title": "The Infinite Shore",
+    "category": "Videography",
+    "type": "video",
+    "mediaUrl": "https://assets.mixkit.co/videos/preview/mixkit-drone-shot-of-waves-crashing-on-rocks-42171-large.mp4",
+    "thumbnail": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=600&q=80",
+    "description": "Breathtaking overhead slow-motion drone footage capturing rugged coastal tides colliding with volcanic black sand."
+  },
+  {
+    "id": "8",
+    "title": "Hyperion Supercar Showcase",
+    "category": "Corporate Photography",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=600&q=80",
+    "description": "Corporate marketing launch shoot for an electric hypercar concept inside an infinity white cove."
+  },
+  {
+    "id": "9",
+    "title": "Vanguard Typography Studio",
+    "category": "Graphic Design",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1561070791-26c113006238?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1561070791-26c113006238?auto=format&fit=crop&w=600&q=80",
+    "description": "Swiss-style grid layout designs focusing on heavy sans-serif type contrast and negative space."
+  },
+  {
+    "id": "10",
+    "title": "Astraea Organic Identity",
+    "category": "Branding",
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1600&q=90",
+    "thumbnail": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=600&q=80",
+    "description": "Minimalist visual identity and packaging solutions using handcrafted organic patterns and tactile materials."
+  }
+]

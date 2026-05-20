@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "PortfolioItem": {
+      "title": "Portfolio Work",
+      "description": "A showcase item representing a premium cinematic video or photographic work",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "type": { "type": "string", "enum": ["video", "image"] },
+        "mediaUrl": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["id", "title", "category", "type", "mediaUrl", "description"]
+    }
+  },
+  "firestore": {
+    "/portfolio_works/{workItemId}": {
+      "schema": "PortfolioItem",
+      "description": "High-fidelity video reels and photographs shared by Brain Works Studio Africa"
+    }
+  }
+}
